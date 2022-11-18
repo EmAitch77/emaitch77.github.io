@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: whitesmoke;
+    user-select: none;
+    transition-duration: 0.3s;
+    transition-property: background-color;
+}
+.card {
+    background-color: white;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: #00000009 0 0 20px 0px;
+    transition-duration: 0.3s;
+    transition-property: background-color;
+}
+.pfp {
+    width: 128px;
+    border-radius: 50%;
+    margin-top: -62px;
+    transition-duration: .5s;
+    margin-bottom: 10px;
+}
+.pfp-full {
+    width: 350px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 20px;
+}
+.card p {
+    color: rgba(128, 128, 128, 0.603);
+    font-weight: lighter;
+    font-size: 14px;
+}
+.line {
+    width: 50px;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.603);
+    margin: 10px auto;
+}
+.card .social-section {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.bubble {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: #00000024 0 0 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+i {
+    color: black;
+}
+.toggle {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    color: black;
+    box-shadow: #00000024 0 0 20px 0px;
+}
+
+@keyframes extend {
+    0% {
+        width: 128px;
+        border-radius: 50%;
+        margin-top: -62px;
+        transition-duration: .5s;
+        margin-bottom: 10px;
+    }
+    100% {
+        width: 350px;
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: 20px;
+    }
+}
